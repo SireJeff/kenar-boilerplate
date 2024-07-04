@@ -6,9 +6,9 @@ services:
     container_name: db
     restart: always
     environment:
-      POSTGRES_DB: <DB_NAME>
-      POSTGRES_USER: <DB_USER>
-      POSTGRES_PASSWORD: <DB_PASSWORD>
+      POSTGRES_DB: Testov
+      POSTGRES_USER: Test
+      POSTGRES_PASSWORD: Test402170
     volumes:
       - ./postgres-data/:/var/lib/postgresql/data/
 
@@ -21,15 +21,15 @@ services:
     depends_on:
       - db
     environment:
-      DJANGO_SECRET_KEY: <RANDOM_SECRET>
-      APP_HOST: <YOUR_NGROK_STATIC_DOMAIN>
+      DJANGO_SECRET_KEY: dq7hu$4@-tdx9&ah--_)sbsds9q_z&3ymb8ue2k*ev$lp@-0%o
+      APP_HOST: https://neat-rationally-jaybird.ngrok-free.app
       DIVAR_IDENTIFICATION_KEY: <YOUR_APP_IDENTIFICATION_KEY_IN_KENAR>
       KENAR_APP_SLUG: <YOUR_APP_SLUG>
-      KENAR_API_KEY: <YOUR_APP_GENERATED_API_KEY_IN_KENAR>
-      KENAR_OAUTH_SECRET: <YOUR_APP_OAUTH_SECRET_IN_KENAR>
-      DATABASE_NAME: <DB_NAME>
-      DATABASE_USER: <DB_USER>
-      DATABASE_PASSWORD: <DB_PASSWORD>
+      KENAR_API_KEY: eyJhbGciOiJSUzI1NiIsImtpZCI6InByaXZhdGVfa2V5XzIiLCJ0eXAiOiJKV1QifQ.eyJhcHBfc2x1ZyI6Inplc3QtY29yYWwtY3VydGFpbiIsImF1ZCI6InNlcnZpY2Vwcm92aWRlcnMiLCJleHAiOjE3MjUyOTEwNzYsImp0aSI6Ijc0NmFiZGZiLTNhMWEtMTFlZi05ZmJhLWNhOGM1MzE0ZGNlNyIsImlhdCI6MTcyMDEwNzA3NiwiaXNzIjoiZGl2YXIiLCJzdWIiOiJhcGlrZXkifQ.dDOT8jwainVei7r-LKwOZOdJU4PvNgZ3Q6tpCtI9Tq_WwIT_M5WQPVXwzJnfVZBkjbwNbZlDzoy-cT6zu1TDvdRIjD18eqJ8rx9d5x26BXlWJyytpBrxoPiWjSro-vMX9A-U0rBiWecJOPk-HnnZ7R5m7A-RUPkW02cmBc7MFwlqLdcLjjOAPq2fveI010wxvqMd2mrivch1XMRLj1W-rghQkMaHX3YOkJD8UPWXmgOhQOyRquonG43Q_iShmaQdy9C8JNxyRv8AJ5ZOjuzLhhd5yFVLcEBbI2XD-tvn631ILVcUOduXpDMkAITLFwmF_u2uLGJbcJ6pXPjgtV9oGw
+      KENAR_OAUTH_SECRET: 30b07cfdbf9283b4daf96322eca835ea24c53d0ad7e0a394f577e88854321a84804bd3b9705722bba297b7ee7f46bfd76907f212549ebb9e7aae40399481fb1d
+      DATABASE_NAME: Testov
+      DATABASE_USER: Test
+      DATABASE_PASSWORD: Test402170
       DATABASE_HOST: db
       DATABASE_PORT: 5432
     ports:
@@ -40,7 +40,7 @@ services:
   ngrok:
     image: docker.arvancloud.ir/ngrok/ngrok
     container_name: ngrok
-    command: ["http", "--domain=<YOUR_NGROK_STATIC_DOMAIN>", "8000"]
+    command: ["http", "--domain=https://neat-rationally-jaybird.ngrok-free.app", "8000"]
     network_mode: "host"
     environment:
-       NGROK_AUTHTOKEN: <YOUR_NGROK_AUTH_TOKEN>
+       NGROK_AUTHTOKEN: 1obcpFHa05Xs2bZNjTu3EqGyg9z_4Dsg96VhtABQtYpqbGMjZ
