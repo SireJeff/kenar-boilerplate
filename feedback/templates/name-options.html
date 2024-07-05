@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>گزینه های نام آگهی</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ul>
+        <li onclick="selectOption('نام آگهی ۱')">نام آگهی ۱</li>
+        <li onclick="selectOption('نام آگهی ۲')">نام آگهی ۲</li>
+        <li onclick="selectOption('نام آگهی ۳')">نام آگهی ۳</li>
+    </ul>
+
+    <script>
+        function selectOption(option) {
+            window.parent.postMessage({ type: 'selectName', data: option }, '*');
+        }
+    </script>
+</body>
+</html>
