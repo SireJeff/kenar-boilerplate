@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     "addon",
     "chat",
     "oauth",
-]
+    'feedback']
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
