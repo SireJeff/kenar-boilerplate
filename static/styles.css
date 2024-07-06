@@ -42,7 +42,24 @@ body {
     gap: 10px;
     justify-content: center;
 }
+<<<<<<< HEAD
+.post {
+    margin-bottom: 15px;
+}
 
+.post-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.post-title {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+=======
+
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
 .option-button {
     background-color: #f1f1f1;
     border: 1px solid #ccc;
@@ -146,3 +163,42 @@ body.dark-mode button {
 body.dark-mode button:hover {
     background-color: #a92f2f;
 }
+<<<<<<< HEAD
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+#user-posts {
+    list-style: none;
+    padding: 0;
+}
+
+#user-posts li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#user-posts li:hover {
+    background-color: #eee;
+}
+=======
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93

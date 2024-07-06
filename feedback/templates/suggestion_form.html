@@ -12,20 +12,29 @@
     <script src="{% static 'script.js' %}"></script>
     <div id="popup-container" class="hidden">
         <div id="popup">
+<<<<<<< HEAD
+=======
           
             
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
             <div class="section">
                 <h3>نام آگهی</h3>
                 <div id="name-options" class="options-container"></div>
                 <div id="selected-name" class="selected-option"></div>
             </div>
+<<<<<<< HEAD
+=======
             
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
             <div class="section">
                 <h3>توضیحات</h3>
                 <div id="description-options" class="options-container"></div>
                 <div id="selected-description" class="selected-option"></div>
             </div>
+<<<<<<< HEAD
+=======
             
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
             <button id="back-button">بازگشت</button>
             <button id="confirm-button">انتخاب قطعی</button>
         </div>
@@ -35,6 +44,20 @@
         <img id="mode-icon" src="{% static 'moon.png' %}">
     </div>
 
+<<<<<<< HEAD
+    <div id="sidebar">
+        <h3>آگهی‌های شما</h3>
+        <ul id="user-posts">
+            {% for post in posts %}
+                <li class="post">
+                    <img src="{{ post.images.0 }}" alt="{{ post.title }}" class="post-image">
+                    <h4 class="post-title">{{ post.title }}</h4>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+=======
     
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
 </body>
 </html>
