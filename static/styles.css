@@ -42,6 +42,7 @@ body {
     gap: 10px;
     justify-content: center;
 }
+<<<<<<< HEAD
 .post {
     margin-bottom: 15px;
 }
@@ -56,6 +57,9 @@ body {
     font-size: 16px;
     margin: 5px 0 0 0;
 }
+=======
+
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
 .option-button {
     background-color: #f1f1f1;
     border: 1px solid #ccc;
@@ -159,6 +163,7 @@ body.dark-mode button {
 body.dark-mode button:hover {
     background-color: #a92f2f;
 }
+<<<<<<< HEAD
 
 #sidebar {
     position: fixed;
@@ -195,3 +200,5 @@ body.dark-mode button:hover {
 #user-posts li:hover {
     background-color: #eee;
 }
+=======
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93

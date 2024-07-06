@@ -1,5 +1,6 @@
 # app/feedback/views.py
 from django.shortcuts import render, redirect
+<<<<<<< HEAD
 from django.http import HttpResponse
 from .forms import SuggestionForm
 from rest_framework.decorators import api_view
@@ -109,6 +110,10 @@ def get_user_posts(request):
     return render(request, 'feedback/user_posts.html', {'posts': posts})
 
 # View for handling suggestion form submission
+=======
+from .forms import SuggestionForm
+
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
 def suggestion_view(request):
     if request.method == 'POST':
         form = SuggestionForm(request.POST)
@@ -120,6 +125,9 @@ def suggestion_view(request):
 
     return render(request, 'suggestion_form.html', {'form': form})
 
+<<<<<<< HEAD
 # View for rendering the thank you page after suggestion submission
+=======
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
 def suggestion_thanks_view(request):
     return render(request, 'suggestion_thanks.html')

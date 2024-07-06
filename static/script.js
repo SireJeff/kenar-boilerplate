@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedDescription = document.getElementById('selected-description');
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const modeIcon = document.getElementById('mode-icon');
+<<<<<<< HEAD
     const userPostsContainer = document.getElementById('user-posts');
+=======
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
     
     const nameOptions = [
         'نام آگهی ۱',
@@ -17,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const descriptionOptions = [
         'توضیحات ۱',
+<<<<<<< HEAD
         'توضیحات 2',
         'توضیحات 3',
     ];
@@ -25,6 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 1, name: 'آگهی ۱', description: 'توضیحات آگهی ۱' },
         { id: 2, name: 'آگهی ۲', description: 'توضیحات آگهی ۲' },
         { id: 3, name: 'آگهی ۳', description: 'توضیحات آگهی ۳' },
+=======
+        'توضیحات ۲',
+        'توضیحات ۳',
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
     ];
 
     function populateOptions(containerId, options, type) {
@@ -70,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+<<<<<<< HEAD
     function populateUserPosts(posts) {
         posts.forEach(post => {
             const listItem = document.createElement('li');
@@ -102,6 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+=======
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
     backButton.addEventListener('click', closePopup);
     confirmButton.addEventListener('click', () => {
         // Handle final selection confirmation
@@ -115,9 +126,12 @@ document.addEventListener('DOMContentLoaded', () => {
     populateOptions('name-options', nameOptions, 'name');
     populateOptions('description-options', descriptionOptions, 'description');
 
+<<<<<<< HEAD
     // Populate user posts
     populateUserPosts(userPosts);
 
+=======
+>>>>>>> 2d7a6a3a0897056e931dfa26b07f5525fa2bdb93
     // For demonstration, show the pop-up after 1 second
     setTimeout(showPopup, 1000);
 });
