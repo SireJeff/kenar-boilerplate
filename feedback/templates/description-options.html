@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>گزینه های توضیحات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ul>
+        <li onclick="selectOption('توضیحات ۱')">توضیحات ۱</li>
+        <li onclick="selectOption('توضیحات ۲')">توضیحات ۲</li>
+        <li onclick="selectOption('توضیحات ۳')">توضیحات ۳</li>
+    </ul>
+
+    <script>
+        function selectOption(option) {
+            window.parent.postMessage({ type: 'selectDescription', data: option }, '*');
+        }
+    </script>
+</body>
+</html>
